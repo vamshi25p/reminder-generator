@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+  font-family: "Roboto", sans-serif; /* Modern, readable font */
+  background-color: #f8f9fa; /* Light, airy background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  max-width: 700px; /* Slightly wider for better content flow */
+  width: 95%; /* More responsive width */
+  background: #fff; /* Clean white background */
+  padding: 30px; /* Increased padding for a more spacious feel */
+  border-radius: 15px; /* Softer rounded corners */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 2.5rem; /* Larger, more impactful title */
+  font-weight: 700; /* Bolder font weight */
+  color: #343a40; /* Darker, more readable title color */
+  margin-bottom: 25px; /* Increased spacing */
+}
+
+/* Upload Button */
+.upload-button {
+  display: inline-flex; /* Use inline-flex for better alignment control */
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff; /* Classic blue */
+  color: #fff; /* White text */
+  padding: 12px 24px; /* Increased padding */
+  border-radius: 10px; /* Slightly more rounded */
+  font-size: 1.1rem; /* Slightly larger font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smoother transitions */
+  border: none; /* Remove default button border */
+  outline: none; /* Remove default focus outline */
+}
+
+.upload-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.upload-button svg {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.upload-button input {
+  display: none;
+}
+
+/* Selectors */
+.selectors {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; /* Stack labels and selects vertically */
+  align-items: flex-start; /* Align labels to the left */
+  width: 100%; /* Take up the full width */
+}
+
+.selectors label {
+  font-size: 1.1rem;
+  color: #495057;
+  margin-bottom: 8px; /* Space between label and select */
+  text-align: left; /* Ensure labels are left-aligned */
+  width: 100%; /* Make label take full width to enforce alignment */
+}
+
+.selectors select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #495057;
+  transition: border-color 0.2s ease;
+  -webkit-appearance: none; /* Remove default arrow in Chrome/Safari */
+  -moz-appearance: none; /* Remove default arrow in Firefox */
+  appearance: none; /* Remove default arrow in modern browsers */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23495057' d='M7.293 6.293a1 1 0 0 1 1.414 0l3 3a1 1 0 0 1-1.414 1.414L8 7.707l-2.293 2.293a1 1 0 0 1-1.414-1.414l3-3z'/%3E%3C/svg%3E"); /* Custom arrow icon */
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+}
+
+.selectors select:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Generate Button */
+.generate-button {
+  background-color: #28a745; /* Success green */
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: none;
+  outline: none;
+  margin-top: 25px;
+}
+
+.generate-button:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Messages Container */
+.messages-container {
+  margin-top: 30px;
+  max-height: 500px; /* Increased max height */
+  overflow-y: auto;
+  padding: 10px; /* Add some padding inside the container */
+  border: 1px solid #dee2e6; /* Subtle border */
+  border-radius: 10px; /* Match container's border-radius */
+}
+
+/* Message Card */
+.message-card {
+  background: #f8f9fa; /* Light gray background */
+  border-radius: 10px;
+  padding: 15px; /* Increased padding */
+  margin-bottom: 15px; /* Increased spacing */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* More subtle shadow */
+  transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+.message-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* More pronounced shadow on hover */
+}
+
+.message-text {
+  width: 80%; /* Slightly reduced width to give copy button more space */
+  padding: 10px;
+  font-size: 1rem; /* Adjusted font size */
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  resize: vertical; /* Allow vertical resizing */
+  font-family: "Roboto", monospace; /* Monospace font for better readability of formatted text */
+  color: #343a40; /* Darker text color */
+}
+
+/* Copy Button */
+.copy-button {
+  background-color: #17a2b8; /* Info teal */
+  color: #fff;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  outline: none;
+}
+
+.copy-button:hover {
+  background-color: #138496; /* Darker teal on hover */
+  transform: translateY(-1px); /* Slight lift effect */
+}
+
+.copy-button svg {
+  display: block; /* Ensure icon is centered */
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px; /* Reduce padding on smaller screens */
+  }
+
+  .title {
+    font-size: 2rem; /* Slightly smaller title on smaller screens */
+  }
+
+  .message-card {
+    flex-direction: column; /* Stack text and button on smaller screens */
+    align-items: stretch; /* Stretch items to full width */
+  }
+
+  .message-text {
+    width: 100%; /* Full width text area */
+    margin-bottom: 10px; /* Space between text and button */
+  }
+
+  .copy-button {
+    width: 100%; /* Full width copy button */
+  }
+}
